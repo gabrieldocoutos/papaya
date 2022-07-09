@@ -1,4 +1,4 @@
-import {  ReactElement, useState } from "react";
+import {  ReactElement, useState } from "react"
 
 interface DropdownProps {
     children: JSX.Element | Array<JSX.Element>
@@ -16,4 +16,4 @@ function Dropdown({ children, title }: DropdownProps) {
     )
 }
 
-export { Dropdown }
+export { Dropdown } 
