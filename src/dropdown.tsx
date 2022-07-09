@@ -1,19 +1,21 @@
-import {  ReactElement, useState } from "react"
+import { ReactElement, useState } from "react";
 
 interface DropdownProps {
-    children: JSX.Element | Array<JSX.Element>
-    title: string
+    children: JSX.Element | Array<JSX.Element>;
+    title: string;
 }
 
 function Dropdown({ children, title }: DropdownProps) {
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column' }} >
-            <p onClick={() => setOpen(!open)} >{title}</p>
+        <div className="flex flex-col items-center mb-3 w-full p-2">
+            <p className="text-left" onClick={() => setOpen(!open)}>
+                {title}
+            </p>
             {open && children}
         </div>
-    )
+    );
 }
 
-export { Dropdown } 
+export { Dropdown };

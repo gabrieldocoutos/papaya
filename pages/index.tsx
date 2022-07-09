@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
     return (
-        <main>
+        <main className="flex flex-col items-center">
             <Dropdown title="Suplementação de uso diário">
                 <div className={styles.flex}>
                     <p>Ômega 3</p>
