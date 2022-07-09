@@ -1,7 +1,7 @@
 import {  ReactElement, useState } from "react";
 
 interface DropdownProps {
-    children: ReactElement
+    children: JSX.Element | Array<JSX.Element>
     title: string
 }
 
