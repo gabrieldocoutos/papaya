@@ -6,7 +6,7 @@ const Home: NextPage = () => {
     return (
         <main className="flex flex-col items-center">
             <Dropdown title="Suplementação de uso diário">
-                <div className={styles.flex}>
+                <div className="flex">
                     <p>Ômega 3</p>
                     <p>1g/dia</p>
                 </div>
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
                     Utilizar uma vez ao dia junto com a primeira ou com a última
                     refeição.
                 </p>
-                <div className={styles.flex}>
+                <div className="flex">
                     <p>Creatina</p>
                     <p>5g/dia</p>
                 </div>
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
                     pós-treino.
                 </p>
 
-                <div className={styles.flex}>
+                <div className="flex">
                     <p>Beta alanina</p>
                     <p>6g/dia</p>
                 </div>
