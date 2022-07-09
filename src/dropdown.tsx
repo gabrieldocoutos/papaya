@@ -1,7 +1,8 @@
-import { ReactElement, useState } from "react";
+import classNames from "classnames";
+import { Children, ReactElement, ReactNode, useState } from "react";
 
 interface DropdownProps {
-    children: JSX.Element | Array<JSX.Element>;
+    children: ReactNode;
     title: string;
 }
 
@@ -13,7 +14,17 @@ function Dropdown({ children, title }: DropdownProps) {
             <p className="text-left" onClick={() => setOpen(!open)}>
                 {title}
             </p>
-            {open && children}
+            <div
+                className={classNames(
+                    "transition-height duration-200 ease-in-out",
+                    {
+                        "visible max-h-96": open,
+                        "invisible opacity-0 max-h-0	": !open,
+                    }
+                )}
+            >
+                {children}
+            </div>
         </div>
     );
 }
