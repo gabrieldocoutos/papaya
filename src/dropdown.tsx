@@ -18,7 +18,7 @@ function Dropdown({ children, title }: DropdownProps) {
                 className={classNames(
                     "transition-height duration-200 ease-in-out",
                     {
-                        "visible max-h-96": open,
+                        "visible max-h-[99999px]": open,
                         "invisible opacity-0 max-h-0	": !open,
                     }
                 )}
