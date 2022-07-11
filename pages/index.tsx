@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { Dropdown } from "../src/dropdown";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
     return (
