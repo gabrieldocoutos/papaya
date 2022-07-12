@@ -19,13 +19,11 @@ function Dropdown({ children, title }: DropdownProps) {
         >
             <div
                 className={
-                    (classNames({}), "flex items-center justify-between w-full")
+                    (classNames({}),
+                    "flex items-center justify-between w-full px-2 py-3")
                 }
             >
-                <p
-                    className="w-full p-2 text-left"
-                    onClick={() => setOpen(!open)}
-                >
+                <p className="w-full text-left" onClick={() => setOpen(!open)}>
                     {title}
                 </p>
                 <ChevronIvon
