@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { Children, ReactElement, ReactNode, useState } from "react";
+import { ReactNode, useState } from "react";
 
 interface DropdownProps {
     children: ReactNode;
@@ -10,8 +10,13 @@ function Dropdown({ children, title }: DropdownProps) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="flex flex-col items-center mb-3 w-full p-2">
-            <p className="text-left" onClick={() => setOpen(!open)}>
+        <div
+            className={classNames(
+                "flex flex-col items-start w-full px-2 mx-2 border-b",
+                { ["bg-slate-200"]: open, ["bg-slate-100"]: !open }
+            )}
+        >
+            <p className="text-left p-2 w-full" onClick={() => setOpen(!open)}>
                 {title}
             </p>
             <div
