@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Dropdown } from "../src/dropdown";
+import { Dropdown } from "dropdown";
 
 const Home: NextPage = () => {
     return (
