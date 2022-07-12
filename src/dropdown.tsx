@@ -1,3 +1,4 @@
+import { ChevronIvon } from "chevron";
 import classNames from "classnames";
 import { ReactNode, useState } from "react";
 
@@ -16,9 +17,24 @@ function Dropdown({ children, title }: DropdownProps) {
                 { ["bg-slate-200"]: open, ["bg-slate-100"]: !open }
             )}
         >
-            <p className="text-left p-2 w-full" onClick={() => setOpen(!open)}>
-                {title}
-            </p>
+            <div
+                className={
+                    (classNames({}), "flex items-center justify-between w-full")
+                }
+            >
+                <p
+                    className="w-full p-2 text-left"
+                    onClick={() => setOpen(!open)}
+                >
+                    {title}
+                </p>
+                <ChevronIvon
+                    className={classNames(
+                        { ["rotate-180"]: open },
+                        "transition duration-200"
+                    )}
+                />
+            </div>
             <div
                 className={classNames(
                     "transition-height duration-200 ease-in-out",
