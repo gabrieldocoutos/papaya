@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { Dropdown } from "dropdown";
-import { Fragment } from "react";
 
 interface SuplementProps {
     name: string;
@@ -10,7 +9,7 @@ interface SuplementProps {
 
 const Suplement = (props: SuplementProps) => {
     return (
-        <div className="mb-2">
+        <div className="my-2">
             <div className="flex">
                 <p className="mb-0">
                     <span className="font-medium">{props.name}</span> -{" "}

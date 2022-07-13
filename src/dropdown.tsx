@@ -13,18 +13,21 @@ function Dropdown({ children, title }: DropdownProps) {
     return (
         <div
             className={classNames(
-                "flex flex-col items-start w-full px-2 mx-2 border-b",
-                { ["bg-slate-200 pb-3"]: open, ["bg-slate-100"]: !open }
+                "flex flex-col items-start w-full mx-2 border-b border-slate-300",
+                {
+                    ["bg-slate-200"]: open,
+                    ["bg-slate-100"]: !open,
+                }
             )}
         >
             <div
-                className={
-                    (classNames({}),
-                    "flex items-center justify-between w-full px-2 py-3")
-                }
+                className={classNames(
+                    { ["border-b border-slate-300"]: open },
+                    "flex items-center justify-between px-2 w-full"
+                )}
                 onClick={() => setOpen(!open)}
             >
-                <p className="w-full font-semibold text-left">{title}</p>
+                <p className="w-full py-3 font-semibold text-left">{title}</p>
                 <ChevronIvon
                     className={classNames(
                         { ["rotate-180"]: open },
@@ -34,9 +37,9 @@ function Dropdown({ children, title }: DropdownProps) {
             </div>
             <div
                 className={classNames(
-                    "transition-height duration-200 ease-in-out",
+                    "transition-height duration-200 ease-in-out px-2",
                     {
-                        "visible max-h-[99999px]": open,
+                        "visible max-h-[99999px] my-3": open,
                         "invisible opacity-0 max-h-0	": !open,
                     }
                 )}
