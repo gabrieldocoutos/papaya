@@ -22,10 +22,9 @@ function Dropdown({ children, title }: DropdownProps) {
                     (classNames({}),
                     "flex items-center justify-between w-full px-2 py-3")
                 }
+                onClick={() => setOpen(!open)}
             >
-                <p className="w-full text-left" onClick={() => setOpen(!open)}>
-                    {title}
-                </p>
+                <p className="w-full text-left">{title}</p>
                 <ChevronIvon
                     className={classNames(
                         { ["rotate-180"]: open },
