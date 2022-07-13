@@ -14,7 +14,7 @@ function Dropdown({ children, title }: DropdownProps) {
         <div
             className={classNames(
                 "flex flex-col items-start w-full px-2 mx-2 border-b",
-                { ["bg-slate-200"]: open, ["bg-slate-100"]: !open }
+                { ["bg-slate-200 pb-3"]: open, ["bg-slate-100"]: !open }
             )}
         >
             <div
@@ -24,7 +24,7 @@ function Dropdown({ children, title }: DropdownProps) {
                 }
                 onClick={() => setOpen(!open)}
             >
-                <p className="w-full text-left">{title}</p>
+                <p className="w-full font-semibold text-left">{title}</p>
                 <ChevronIvon
                     className={classNames(
                         { ["rotate-180"]: open },

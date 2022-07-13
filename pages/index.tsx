@@ -1,36 +1,50 @@
 import type { NextPage } from "next";
 import { Dropdown } from "dropdown";
+import { Fragment } from "react";
+
+interface SuplementProps {
+    name: string;
+    quantity: string;
+    description: string;
+}
+
+const Suplement = (props: SuplementProps) => {
+    return (
+        <div className="mb-2">
+            <div className="flex">
+                <p className="mb-0">
+                    <span className="font-medium">{props.name}</span> -{" "}
+                    {props.quantity}
+                </p>
+            </div>
+            <p>{props.description}</p>
+        </div>
+    );
+};
 
 const Home: NextPage = () => {
     return (
         <main className="flex flex-col items-center">
             <Dropdown title="Suplementação de uso diário">
-                <div className="flex">
-                    <p>Ômega 3</p>
-                    <p>1g/dia</p>
-                </div>
-                <p>
-                    Utilizar uma vez ao dia junto com a primeira ou com a última
-                    refeição.
-                </p>
-                <div className="flex">
-                    <p>Creatina</p>
-                    <p>5g/dia</p>
-                </div>
-                <p>
-                    Utilizar todos os dias, dias de treino utilizar na refeição
-                    pós-treino.
-                </p>
-
-                <div className="flex">
-                    <p>Beta alanina</p>
-                    <p>6g/dia</p>
-                </div>
-                <p>
-                    Utilizar todos os dias, inclusive em dias de descanso, caso
-                    sintas efeito de parestesia (formigamento) podes dividir a
-                    dose em 3x de 2g ao longo do dia.
-                </p>
+                <Suplement
+                    name="Ômega 3"
+                    quantity="1g/dia"
+                    description="Utilizar uma vez ao dia junto com a primeira ou com a última
+                         refeição."
+                />
+                <Suplement
+                    name="Creatina"
+                    quantity="5g/dia"
+                    description="Utilizar todos os dias, dias de treino utilizar na refeição
+    7                     pós-treino."
+                />
+                <Suplement
+                    name="Beta alanina"
+                    quantity="6g/dia"
+                    description="Utilizar todos os dias, inclusive em dias de descanso, caso
+    7                     sintas efeito de parestesia (formigamento) podes dividir a
+    8                     dose em 3x de 2g ao longo do dia."
+                />
             </Dropdown>
             <Dropdown title="Refeição 1">
                 <p>20g de whey protein</p>
