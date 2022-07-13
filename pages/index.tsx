@@ -170,31 +170,31 @@ const Home: NextPage = () => {
             </Dropdown>
 
             <Dropdown title="1 PORÇÃO DE FRUTAS EQUIVALE A:">
-                <p>Abacaxi - 2 fatias finas (150g)</p>
-                <p>Ameixa - 2 unidades (140g)</p>
-                <p>Amora - 1 xícara (130g)</p>
-                <p>Banana - 1 unidade média (70g)</p>
-                <p>Bergamota - 1 unidade média (170g)</p>
-                <p>Caqui - 1 unidade pequena (110g)</p>
-                <p>Cereja - 15 unidades (110g)</p>
-                <p>Figo - 2 unidades pequenas (150g)</p>
-                <p>Goiaba - 1 unidade grande(140g)</p>
-                <p>Kiwi - 2 unidades médias (130g)</p>
-                <p>Laranja - 1 unidade média (160g)</p>
-                <p>Maçã (vermelha/verde) - 1 unidade média (120g)</p>
+                <p>Abacaxi 🍍 - 2 fatias finas (150g)</p>
+                <p>Ameixa 🍑 - 2 unidades (140g)</p>
+                <p>Amora 🫐 - 1 xícara (130g)</p>
+                <p>Banana 🍌 - 1 unidade média (70g)</p>
+                <p>Bergamota 🍊 - 1 unidade média (170g)</p>
+                <p>Caqui 🍅 - 1 unidade pequena (110g)</p>
+                <p>Cereja 🍒 - 15 unidades (110g)</p>
+                <p>Figo 🍋 - 2 unidades pequenas (150g)</p>
+                <p>Goiaba 🍏 - 1 unidade grande(140g)</p>
+                <p>Kiwi 🥝 - 2 unidades médias (130g)</p>
+                <p>Laranja 🍊 - 1 unidade média (160g)</p>
+                <p>Maçã (vermelha/verde) 🍎 - 1 unidade média (120g)</p>
                 <p>
-                    Mamão (formosa/papaia) - 3 fatias médias ou 1⁄2 papaia
+                    Mamão (formosa/papaia) 🥭 - 3 fatias médias ou 1⁄2 papaia
                     (160g) 1⁄2 unidade média (110g)
                 </p>
-                <p>Manga - 2 unidades (100g)</p>
-                <p>Maracujá - 1 fatia grossa (230g)</p>
-                <p>Melancia - 3 fatias finas (260g)</p>
-                <p>Melão - 15 unidades médias (240g)</p>
-                <p>Morango - 1 xícara (120g)</p>
-                <p>Mirtilo Nectarina - 2 unidades médias (150g)</p>
-                <p>Pera - 1 unidade média (130g)</p>
-                <p>Pêssego - 2 unidades pequenas (180g)</p>
-                <p>Uvas - 11 unidades (130g)</p>
+                <p>Manga 🥭 - 2 unidades (100g)</p>
+                <p>Maracujá ❤️‍🔥 - 1 fatia grossa (230g)</p>
+                <p>Melancia 🍉 - 3 fatias finas (260g)</p>
+                <p>Melão 🍈 - 15 unidades médias (240g)</p>
+                <p>Morango 🍓 - 1 xícara (120g)</p>
+                <p>Mirtilo Nectarina 🍑 - 2 unidades médias (150g)</p>
+                <p>Pera 🍐 - 1 unidade média (130g)</p>
+                <p>Pêssego 🍑 - 2 unidades pequenas (180g)</p>
+                <p>Uvas 🍇 - 11 unidades (130g)</p>
             </Dropdown>
         </main>
     );
