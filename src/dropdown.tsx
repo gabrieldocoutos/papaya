@@ -1,4 +1,4 @@
-import { ChevronIvon } from "chevron";
+import { ChevronIvon } from "icons/chevron-icon";
 import classNames from "classnames";
 import { ReactNode, useState } from "react";
 
