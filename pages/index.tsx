@@ -91,34 +91,34 @@ const Home: NextPage = () => {
                 />
             </Dropdown>
             <Dropdown title="Orientações Gerais">
-                <p className="text-sm mb-2">
+                <p className="mb-2 text-sm">
                     Os horários das refeições podem e devem ser adaptados de
                     acordo com a necessidade.
                 </p>
-                <p className="text-sm mb-2">
+                <p className="mb-2 text-sm">
                     Atentar à ingestão de água (2,8– 4,5L). Café preto, chás,
                     chimarrão – sem açúcar – podem ser consumidos, porém não
                     substituem a ingestão de água.{" "}
                 </p>
-                <p className="text-sm mb-2">
+                <p className="mb-2 text-sm">
                     Evitar o consumo de bebidas alcoólicas.
                 </p>
-                <p className="text-sm mb-2">
+                <p className="mb-2 text-sm">
                     Evitar o consumo de alimentos industrializados e
                     ultraprocessados como: enlatados, embutidos, conservas,
                     temperos prontos e alimentos prontos para consumo.
                 </p>
-                <p className="text-sm mb-2">
+                <p className="mb-2 text-sm">
                     Evitar o consumo de alimentos industrializados e
                     ultraprocessados como: enlatados, embutidos, conservas,
                     temperos prontos e alimentos prontos para consumo. Temperos
                     naturais e especiarias podem ser utilizados a gosto.
                 </p>
-                <p className="text-sm mb-2">
+                <p className="mb-2 text-sm">
                     Gordura aconselhada para o preparo de refeições: azeite de
                     oliva extra virgem (já contabilizadas além das descritas).
                 </p>
-                <p className="text-sm mb-2">
+                <p className="mb-2 text-sm">
                     No momento das refeições você deve prestar atenção nas
                     quantidades e na qualidade do alimento que está sendo
                     escolhido. É importante mastigar devagar para que o sinal de
