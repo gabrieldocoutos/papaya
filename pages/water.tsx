@@ -1,10 +1,6 @@
 import { useRouter } from "next/router";
 
-function Water(props) {
-    console.log(props);
-    const router = useRouter();
-    console.log({ router });
-
+function Water() {
     return <h1>agua</h1>;
 }
 

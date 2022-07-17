@@ -13,21 +13,21 @@ function Dropdown({ children, title }: DropdownProps) {
     return (
         <div
             className={classNames(
-                "flex flex-col items-start w-full mx-2 border-b border-neutral-300",
+                "flex flex-col items-start w-full mx-2 border-b border-green-300",
                 {
-                    ["bg-neutral-100"]: open,
-                    ["bg-neutral-50"]: !open,
+                    ["bg-green-100"]: open,
+                    ["bg-green-50"]: !open,
                 }
             )}
         >
             <div
                 className={classNames(
-                    { ["border-b border-neutral-300"]: open },
+                    { ["border-b border-green-300"]: open },
                     "flex items-center justify-between px-2 w-full"
                 )}
                 onClick={() => setOpen(!open)}
             >
-                <p className="w-full py-3 font-semibold text-left text-neutral-500">
+                <p className="w-full py-3 font-semibold text-left text-green-500">
                     {title}
                 </p>
                 <ChevronIvon
