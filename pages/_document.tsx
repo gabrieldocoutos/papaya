@@ -5,7 +5,7 @@ export default function Document() {
     return (
         <Html>
             <Head />
-            <body className={" bg-green-100 text-green-600 hide-scrollbar"}>
+            <body className={"text-gunmetal-600 bg-gunmetal-50 hide-scrollbar"}>
                 <Main />
                 <NextScript />
             </body>

@@ -9,11 +9,11 @@ function Footer() {
     console.log(router);
 
     return (
-        <footer className="fixed bottom-0 left-0 w-full p-2 bg-green-50 flex items-center">
+        <footer className="fixed bottom-0 left-0 w-full p-2 bg-gunmetal-100 flex items-center">
             <Link href={"/"}>
                 <a>
                     <div className="flex flex-col items-center justify-end px-2">
-                        <HomeIcon className="stroke-green-500" />
+                        <HomeIcon className="stroke-gunmetal-500" />
                         <p className="text-xs">Início</p>
                     </div>
                 </a>
@@ -21,7 +21,7 @@ function Footer() {
             <Link href={"/water"}>
                 <a>
                     <div className="flex flex-col items-center justify-end px-2">
-                        <WaterIcon className="fill-green-500" />
+                        <WaterIcon className="fill-gunmetal-500" />
                         <p className="text-xs">Água</p>
                     </div>
                 </a>
