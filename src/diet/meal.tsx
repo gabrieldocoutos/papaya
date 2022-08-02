@@ -8,7 +8,7 @@ function Meal(props: FoodProps) {
     return (
         <div>
             <div className="mb-3">
-                <p className="font-semibold mb-2">Ingredientes: </p>
+                <p className="mb-2 font-semibold">Ingredientes: </p>
                 {props.ingredients.map((ingredient) => (
                     <p className="pl-2 mb-2 text-sm" key={ingredient}>
                         {ingredient}
@@ -16,7 +16,7 @@ function Meal(props: FoodProps) {
                 ))}
             </div>
             {props.description && (
-                <p className="text-sm mb-2">{props.description}</p>
+                <p className="mb-2 text-sm">{props.description}</p>
             )}
 
             {props.suggestion && (

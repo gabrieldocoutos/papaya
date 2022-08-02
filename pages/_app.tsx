@@ -1,8 +1,30 @@
 import Head from "next/head";
 import "styles/globals.css";
 import { AppProps } from "next/app";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+    const router = useRouter();
+
+    useEffect(() => {
+        const handleUser = () => {
+            const user = localStorage.getItem("user");
+
+            if (!user) {
+                return;
+            }
+
+            if (user === "gabriel") {
+                router.push("/gabriel");
+            } else {
+                router.push("monique");
+            }
+        };
+
+        handleUser();
+    }, [router]);
+
     return (
         <>
             <Head>
