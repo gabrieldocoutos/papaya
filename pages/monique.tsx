@@ -33,6 +33,16 @@ export default function Monique() {
                     ]}
                 />
             </Dropdown>
+            <Dropdown title="Lanche">
+                <Meal
+                    ingredients={[
+                        "tapioca 45g ou 2 fatias de pão",
+                        "16g pasta de amendoim",
+                    ]}
+                    suggestion="Crepioca (3 colh de goma 1 ovo) - 1 porção (121g) - ou - Tapioca de frango - 80g - ou - Panqueca de frango -
+100g - ou - Sanduiche de pão integral com 1 fatia queijo minas - 80g"
+                />
+            </Dropdown>
             <Dropdown title="Pré-treino">
                 <Meal
                     ingredients={[
